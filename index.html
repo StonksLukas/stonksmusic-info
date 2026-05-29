@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StonksMusic - Legal Information</title>
+    <title>StonksMusic - Rechtliche Informationen</title>
     <style>
         :root {
-            --bg-color: #131313;
+            --bg-color: #050505;
             --text-color: #e0e0e0;
-            --accent-color: #5865F2; /* Discord Blurple */
-            --box-bg: #242424;
-            --border-color: #444;
+            --text-dim: #b0b0b0;
+            --accent-color: #5865F2; /* Sleek Discord Blurple für den Musik-Bot */
+            --box-bg: rgba(20, 20, 20, 0.8);
+            --border-color: rgba(255, 255, 255, 0.1);
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,33 +28,39 @@
             padding: 40px;
             border-radius: 12px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
         }
         nav {
             text-align: center;
             margin-bottom: 30px;
-            padding: 10px;
-            background: rgba(88, 101, 242, 0.1);
+            padding: 12px;
+            background: rgba(88, 101, 242, 0.05);
             border-radius: 8px;
+            border: 1px solid rgba(88, 101, 242, 0.1);
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: var(--accent-color);
             font-weight: bold;
+            transition: color 0.2s ease;
         }
         nav a:hover {
+            color: #ffffff;
             text-decoration: underline;
         }
-        h1 { color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; text-align: center; }
+        h1 { color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; text-align: center; font-size: 2rem; letter-spacing: -0.5px; }
         h2 { color: var(--accent-color); margin-top: 40px; font-size: 1.6rem; border-left: 4px solid var(--accent-color); padding-left: 15px; }
         h3 { color: #ffffff; margin-top: 25px; font-size: 1.2rem; }
-        p, ul { margin-bottom: 15px; }
-        .footer { margin-top: 40px; font-size: 0.9rem; color: #777; border-top: 1px solid #444; padding-top: 20px; text-align: center; }
-        .highlight-box { background: rgba(231, 76, 60, 0.1); border: 1px dashed #e74c3c; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        p, ul { margin-bottom: 15px; color: var(--text-dim); }
+        p strong, ul strong { color: #ffffff; }
+        .footer { margin-top: 40px; font-size: 0.9rem; color: #555; border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; }
+        .highlight-box { background: rgba(88, 101, 242, 0.05); border: 1px dashed var(--accent-color); padding: 15px; border-radius: 8px; margin: 20px 0; color: #ffffff; }
+        .warning-box { background: rgba(231, 76, 60, 0.08); border: 1px dashed #e74c3c; padding: 15px; border-radius: 8px; margin: 20px 0; color: #ffffff; }
         li { margin-bottom: 8px; }
-        hr { border: 0; height: 1px; background: #444; margin: 50px 0; }
-        code { background: #333; padding: 2px 5px; border-radius: 4px; color: #f8c291; }
+        hr { border: 0; height: 1px; background: var(--border-color); margin: 50px 0; }
+        code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 4px; color: #f8c291; font-family: monospace; font-size: 0.95rem; }
     </style>
 </head>
 <body>
@@ -62,72 +69,75 @@
     <h1>StonksMusic Legal Info</h1>
 
     <nav>
-        <a href="#tos">Terms of Service</a>
-        <a href="#privacy">Privacy Policy</a>
+        <a href="#tos">Nutzungsbedingungen (ToS)</a>
+        <a href="#privacy">Datenschutzerklärung (Privacy)</a>
     </nav>
 
-    <h2 id="tos">Terms of Service</h2>
-    <p><strong>Effective Date:</strong> March 17, 2026</p>
+    <h2 id="tos">Nutzungsbedingungen (Terms of Service)</h2>
+    <p><strong>Stand:</strong> 29. Mai 2026</p>
 
-    <p>By adding <strong>StonksMusic</strong> to a Discord server or using its commands, you agree to these Terms of Service. These rules ensure a fair and stable environment for all users.</p>
+    <p>Durch das Hinzufügen von <strong>StonksMusic</strong> zu einem Discord-Server oder durch die Nutzung seiner Musik-Befehle stimmst du den folgenden Nutzungsbedingungen zu. Diese Regeln gewährleisten eine stabile und faire Musikwiedergabe für alle Nutzer.</p>
 
-    <h3>1. Age Requirements</h3>
-    <p>You must meet the minimum age requirements set by Discord and the laws of your country. If you are below this age, you are not permitted to use the Bot.</p>
+    <h3>1. Altersvoraussetzungen</h3>
+    <p>Du musst die Mindestalter-Anforderungen der Discord-Nutzungsbedingungen sowie die gesetzlichen Bestimmungen deines Landes erfüllen. Wenn du dieses Alter noch nicht erreicht hast, ist die Nutzung des Bots nicht gestattet.</p>
 
-    <h3>2. Prohibited Activities</h3>
-    <p>The following actions are strictly forbidden and will result in a ban from the Bot:</p>
+    <h3>2. Verbotene Aktivitäten</h3>
+    <p>Jede Form von böswilliger Interaktion führt zum permanenten Ausschluss (Blacklist) von der Bot-Nutzung. Verboten sind insbesondere:</p>
     <ul>
-        <li>Attacking or attempting to compromise the Bot's hosting infrastructure (Raspberry Pi) or web server.</li>
-        <li>Spamming commands to intentionally slow down or crash the service.</li>
-        <li>Exploiting or abusing bugs. Please report any discovered bugs via private message to <code>stonkslukas</code>.</li>
+        <li>Angriffe jeglicher Art auf die Hosting-Infrastruktur, Streaming-Schnittstellen oder Server des Bots.</li>
+        <li>Spammen von Musik-Befehlen, um das Abspiel-System oder die Verbindung absichtlich zu verlangsamen oder zum Absturz zu bringen.</li>
+        <li>Das bewusste Ausnutzen von Programmfehlern (Bugs). Gefundene Fehler müssen umgehend per Direktnachricht an den Entwickler gemeldet werden.</li>
     </ul>
 
-    <h3>3. Content & Responsibility</h3>
-    <p>The responsibility for what music is played lies with the <strong>Server Administrators</strong> and the users who request it. StonksMusic is a tool for playback and does not curate or own the streamed content.</p>
+    <h3>3. Inhalt & Verantwortung</h3>
+    <p>Die Verantwortung für die gestreamten Inhalte und abgespielten Musiktitel liegt <strong>vollständig bei den jeweiligen Server-Administratoren</strong> und den Nutzern, die den Titel angefordert haben. StonksMusic dient reinen Wiedergabezwecken und besitzt, kuratiert oder hostet die gestreamten Audioquellen nicht selbst.</p>
 
-    <h3>4. Availability Disclaimer</h3>
+    <h3>4. Verfügbarkeit & Gewährleistung</h3>
     <div class="highlight-box">
-        <strong>Technical Note:</strong> StonksMusic is a hobby project currently hosted on a <strong>Raspberry Pi 5</strong>.
+        <strong>Technischer Hinweis:</strong> StonksMusic ist ein ambitioniertes Hobby-Projekt, welches auf dedizierten Hochleistungsservern betrieben wird.
     </div>
-    <p>We do our best to maintain 24/7 uptime, but we cannot guarantee constant availability. Downtime for maintenance, power outages, or hardware resets may occur. The service is provided "as is".</p>
+    <p>Obwohl wir eine 24/7-Uptime anstreben, gibt es keine Garantie für permanente Erreichbarkeit. Gelegentliche Ausfälle für Wartungsarbeiten, Updates oder Server-Resets können vorkommen. Der Dienst wird im aktuellen Zustand ("as is") bereitgestellt.</p>
 
-    <h3>5. Termination of Service</h3>
-    <p>The Developer reserves the right to block users/servers or take the Bot offline (maintenance/retirement) at any time without prior notice if rules are violated.</p>
+    <h3>5. Ausschlussrecht</h3>
+    <p>Der Entwickler behält sich das Recht vor, einzelne User oder gesamte Discord-Server bei Verstößen gegen diese ToS oder bei Richtlinienverstößen ohne Vorankündigung von der Nutzung des Musik-Bots auszuschließen.</p>
 
     <hr>
 
-    <h2 id="privacy">Privacy Policy</h2>
-    <p><strong>Effective Date:</strong> March 17, 2026</p>
+    <h2 id="privacy">Datenschutzerklärung (Privacy Policy)</h2>
+    <p><strong>Stand:</strong> 29. Mai 2026</p>
 
-    <p>This section describes how we handle your data. We believe in data minimalism and transparency.</p>
+    <p>Dieses Dokument beschreibt, wie wir mit Daten umgehen. Wir glauben fest an absolute Datensparsamkeit und maximale Transparenz.</p>
 
-    <h3>1. Data Access and Usage</h3>
-    <p>StonksMusic processes the following information through the Discord API:</p>
+    <h3>1. Datenerhebung und Verarbeitung</h3>
+    <p>StonksMusic verarbeitet über die offizielle Discord-API ausschließlich Informationen, die für die Musiksteuerung zwingend notwendig sind:</p>
     <ul>
-        <li><strong>User Identification:</strong> Your Discord User ID and Username.</li>
-        <li><strong>Server Context:</strong> Server (Guild) IDs where the Bot is active.</li>
-        <li><strong>Command Logs:</strong> Technical data (command type, server, timestamp) used <strong>exclusively for error diagnosis and policy violations</strong>.</li>
+        <li><strong>User-Identifikation:</strong> Deine eindeutige Discord-User-ID sowie dein Benutzername.</li>
+        <li><strong>Server-Kontext:</strong> Server-IDs (Guild-IDs) und Sprachkanal-IDs, auf denen der Bot aktiv Musik wiedergibt.</li>
+        <li><strong>Technische Logs:</strong> Temporäre Erfassung von Befehls-Aufrufen (z.B. Song-Anfragen, Timestamp) ausschließlich zur Fehlerdiagnose und zur Erkennung von Richtlinienverstößen.</li>
     </ul>
 
-    <h3>2. Audio Data Disclaimer</h3>
-    <p><strong>StonksMusic does NOT record, store, or monitor any audio data from Discord voice channels.</strong> It only streams music from public sources to the channel.</p>
+    <h3>2. Absoluter Verzicht auf Audio-Aufzeichnungen</h3>
+    <div class="warning-box">
+        <strong>Wichtiger Datenschutz-Grundsatz:</strong> StonksMusic zeichnet zu keinem Zeitpunkt Audio-Daten aus den Discord-Sprachkanälen auf, speichert diese nicht und hört diese auch nicht mit.
+    </div>
+    <p>Der Bot agiert ausschließlich als reiner Sender (Streamer), um Musik aus öffentlichen Quellen in den Sprachkanal zu übertragen. Es findet keinerlei Überwachung von Gesprächen statt.</p>
 
-    <h3>3. Data Retention and Deletion (Self-Service)</h3>
-    <p>Management of your data is handled through Discord's own system:</p>
+    <h3>3. Datenspeicherung & Löschung (Self-Service)</h3>
+    <p>Die Kontrolle über deine Daten erfolgt direkt über das integrierte System von Discord:</p>
     <ul>
-        <li><strong>User Control:</strong> To delete your data, you must <strong>deauthorize the application</strong> in your Discord settings under <code>User Settings > Authorized Apps</code>.</li>
-        <li><strong>Manual Deletion:</strong> As we do not store your profile in a separate permanent database, manual deletion by the developer is not possible. Deauthorization is the only way to revoke access.</li>
+        <li><strong>User-Verbindung trennen:</strong> Da wir keine externen Benutzerprofile in separaten, permanenten Datenbanken für den Musik-Bot anlegen, kannst du die Verknüpfung jederzeit selbst aufheben. Entziehe der App dazu einfach die Autorisierung in deinen Discord-Einstellungen unter <code>User Settings > Authorized Apps</code>.</li>
+        <li><strong>Server-Daten bereinigen:</strong> Wird der Bot von einem Server entfernt (gekicked/gebannt), verfallen jegliche temporäre Sitzungsdaten für diesen Server automatisch.</li>
     </ul>
 
-    <h3>4. Contact</h3>
-    <p>For bug reports or questions, contact the Developer:</p>
+    <h3>4. Kontakt</h3>
+    <p>Bei Fragen zum Datenschutz, Fehlerberichten oder Anregungen kannst du den Entwickler jederzeit direkt kontaktieren:</p>
     <ul>
-        <li><strong>Developer:</strong> StonksLukas</li>
-        <li><strong>Support:</strong> Send a private Message on Discord to <code>stonkslukas</code></li>
+        <li><strong>Entwickler:</strong> stonkslukas</li>
+        <li><strong>Support:</strong> Sende eine private Nachricht auf Discord an <code>stonkslukas</code></li>
     </ul>
 
     <div class="footer">
-        <p>&copy; 2026 StonksMusic. This document is provided for transparency regarding data usage in accordance with Discord Developer Terms.</p>
+        <p>&copy; 2026 StonksMusic. Diese Dokumentation wurde transparent und in Übereinstimmung mit den Discord Developer Terms erstellt.</p>
     </div>
 </div>
 
